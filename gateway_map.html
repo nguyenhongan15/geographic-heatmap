@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_48186d3238fd3b0275a80bd4fbaf1e61 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_48186d3238fd3b0275a80bd4fbaf1e61" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_48186d3238fd3b0275a80bd4fbaf1e61 = L.map(
+                "map_48186d3238fd3b0275a80bd4fbaf1e61",
+                {
+                    center: [16.068747816227003, 108.18812382221968],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_51f73393382fe1fe97386ab8d927d085 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_51f73393382fe1fe97386ab8d927d085.addTo(map_48186d3238fd3b0275a80bd4fbaf1e61);
+        
+    
+            var marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_aba7f40443f8a77bc6d8ea4c32720a0d = L.circleMarker(
+                [16.06815, 108.15448],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28);
+        
+    
+        var popup_1e6f2902f2bd5896b3af464d154b9d7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7da762e106ae90fffdbedcf1f98df8b2 = $(`<div id="html_7da762e106ae90fffdbedcf1f98df8b2" style="width: 100.0%; height: 100.0%;">     <b>Gateway ID:</b> ac1f09fffe0fd629<br>     <b>Altitude:</b> 108.15m<br>     <b>Coordinates:</b> (16.06815, 108.15448)     </div>`)[0];
+                popup_1e6f2902f2bd5896b3af464d154b9d7d.setContent(html_7da762e106ae90fffdbedcf1f98df8b2);
+            
+        
+
+        circle_marker_aba7f40443f8a77bc6d8ea4c32720a0d.bindPopup(popup_1e6f2902f2bd5896b3af464d154b9d7d)
+        ;
+
+        
+    
+    
+            circle_marker_aba7f40443f8a77bc6d8ea4c32720a0d.bindTooltip(
+                `<div>
+                     ac1f09fffe0fd629
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6bbe2a9d7f37e650ff1765b9ae909178 = L.circleMarker(
+                [16.05469, 108.22009],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28);
+        
+    
+        var popup_63151b32c4e7f58edb6838fd05d96fcc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7183b4b3efefd327454cbc0946be4d0d = $(`<div id="html_7183b4b3efefd327454cbc0946be4d0d" style="width: 100.0%; height: 100.0%;">     <b>Gateway ID:</b> ac1f09fffe00ab20<br>     <b>Altitude:</b> 108.22m<br>     <b>Coordinates:</b> (16.05469, 108.22009)     </div>`)[0];
+                popup_63151b32c4e7f58edb6838fd05d96fcc.setContent(html_7183b4b3efefd327454cbc0946be4d0d);
+            
+        
+
+        circle_marker_6bbe2a9d7f37e650ff1765b9ae909178.bindPopup(popup_63151b32c4e7f58edb6838fd05d96fcc)
+        ;
+
+        
+    
+    
+            circle_marker_6bbe2a9d7f37e650ff1765b9ae909178.bindTooltip(
+                `<div>
+                     ac1f09fffe00ab20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15014de7673060ce049cd351fe22ecf3 = L.circleMarker(
+                [16.054765682623003, 108.21985626414313],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28);
+        
+    
+        var popup_753c695f9fe689d45d4ce5e3477eb5a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24230621f17a0830976cc1a1011cc9fb = $(`<div id="html_24230621f17a0830976cc1a1011cc9fb" style="width: 100.0%; height: 100.0%;">     <b>Gateway ID:</b> ac1f09fffe06fcf2<br>     <b>Altitude:</b> N/A<br>     <b>Coordinates:</b> (16.05477, 108.21986)     </div>`)[0];
+                popup_753c695f9fe689d45d4ce5e3477eb5a4.setContent(html_24230621f17a0830976cc1a1011cc9fb);
+            
+        
+
+        circle_marker_15014de7673060ce049cd351fe22ecf3.bindPopup(popup_753c695f9fe689d45d4ce5e3477eb5a4)
+        ;
+
+        
+    
+    
+            circle_marker_15014de7673060ce049cd351fe22ecf3.bindTooltip(
+                `<div>
+                     ac1f09fffe06fcf2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7af8a3f1aa435ebde486123042dedaa = L.circleMarker(
+                [15.98571, 108.23986],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28);
+        
+    
+        var popup_108c450f23962a33f2a260165907a862 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea24974a6dcbafadb61b56656850fe99 = $(`<div id="html_ea24974a6dcbafadb61b56656850fe99" style="width: 100.0%; height: 100.0%;">     <b>Gateway ID:</b> ac1f09fffe0fd63b<br>     <b>Altitude:</b> 108.24m<br>     <b>Coordinates:</b> (15.98571, 108.23986)     </div>`)[0];
+                popup_108c450f23962a33f2a260165907a862.setContent(html_ea24974a6dcbafadb61b56656850fe99);
+            
+        
+
+        circle_marker_a7af8a3f1aa435ebde486123042dedaa.bindPopup(popup_108c450f23962a33f2a260165907a862)
+        ;
+
+        
+    
+    
+            circle_marker_a7af8a3f1aa435ebde486123042dedaa.bindTooltip(
+                `<div>
+                     ac1f09fffe0fd63b
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e395ae51eb4e353fd17f6482298dfc1e = L.circleMarker(
+                [16.0659959, 108.1532551],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28);
+        
+    
+        var popup_70f2520b776686e8655863326e57b8f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f4145886cf0a99fe131d1eea0c3886f = $(`<div id="html_1f4145886cf0a99fe131d1eea0c3886f" style="width: 100.0%; height: 100.0%;">     <b>Gateway ID:</b> 7276ff002e06029f<br>     <b>Altitude:</b> N/A<br>     <b>Coordinates:</b> (16.06600, 108.15326)     </div>`)[0];
+                popup_70f2520b776686e8655863326e57b8f1.setContent(html_1f4145886cf0a99fe131d1eea0c3886f);
+            
+        
+
+        circle_marker_e395ae51eb4e353fd17f6482298dfc1e.bindPopup(popup_70f2520b776686e8655863326e57b8f1)
+        ;
+
+        
+    
+    
+            circle_marker_e395ae51eb4e353fd17f6482298dfc1e.bindTooltip(
+                `<div>
+                     7276ff002e06029f
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa0d2e81361998095302774cace4a511 = L.circleMarker(
+                [16.11829376220703, 108.27363586425781],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28);
+        
+    
+        var popup_53fd22441008a1b87178163fb52f95a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7e06f2ba35fe8568bf6a7d55c165d78 = $(`<div id="html_a7e06f2ba35fe8568bf6a7d55c165d78" style="width: 100.0%; height: 100.0%;">     <b>Gateway ID:</b> 7276ff002e062cf2<br>     <b>Altitude:</b> 108.27m<br>     <b>Coordinates:</b> (16.11829, 108.27364)     </div>`)[0];
+                popup_53fd22441008a1b87178163fb52f95a0.setContent(html_a7e06f2ba35fe8568bf6a7d55c165d78);
+            
+        
+
+        circle_marker_fa0d2e81361998095302774cace4a511.bindPopup(popup_53fd22441008a1b87178163fb52f95a0)
+        ;
+
+        
+    
+    
+            circle_marker_fa0d2e81361998095302774cace4a511.bindTooltip(
+                `<div>
+                     7276ff002e062cf2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0aa7df8a7802285584fd092add0c552 = L.circleMarker(
+                [16.075590133666992, 108.22207641601562],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28);
+        
+    
+        var popup_af6a89ce4c7b02239d95d491a0d6b7ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0aa4b2d2a0b68f805ffb2e2198e225b6 = $(`<div id="html_0aa4b2d2a0b68f805ffb2e2198e225b6" style="width: 100.0%; height: 100.0%;">     <b>Gateway ID:</b> 7276ff002e061f5b<br>     <b>Altitude:</b> 108.22m<br>     <b>Coordinates:</b> (16.07559, 108.22208)     </div>`)[0];
+                popup_af6a89ce4c7b02239d95d491a0d6b7ac.setContent(html_0aa4b2d2a0b68f805ffb2e2198e225b6);
+            
+        
+
+        circle_marker_d0aa7df8a7802285584fd092add0c552.bindPopup(popup_af6a89ce4c7b02239d95d491a0d6b7ac)
+        ;
+
+        
+    
+    
+            circle_marker_d0aa7df8a7802285584fd092add0c552.bindTooltip(
+                `<div>
+                     7276ff002e061f5b
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d173f81db4c9300c401270236dec6cd8 = L.circleMarker(
+                [16.0740935, 108.1524913],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28);
+        
+    
+        var popup_6fe3d149fb45c3d3563a40bed2fc9b69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cfe8dd6301ad40581d84ddf34c99ec2 = $(`<div id="html_6cfe8dd6301ad40581d84ddf34c99ec2" style="width: 100.0%; height: 100.0%;">     <b>Gateway ID:</b> 7276ff002e0507da<br>     <b>Altitude:</b> N/A<br>     <b>Coordinates:</b> (16.07409, 108.15249)     </div>`)[0];
+                popup_6fe3d149fb45c3d3563a40bed2fc9b69.setContent(html_6cfe8dd6301ad40581d84ddf34c99ec2);
+            
+        
+
+        circle_marker_d173f81db4c9300c401270236dec6cd8.bindPopup(popup_6fe3d149fb45c3d3563a40bed2fc9b69)
+        ;
+
+        
+    
+    
+            circle_marker_d173f81db4c9300c401270236dec6cd8.bindTooltip(
+                `<div>
+                     7276ff002e0507da
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44688f806e0b0a57f7504c53f54770b5 = L.circleMarker(
+                [16.11073, 108.12857],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28);
+        
+    
+        var popup_c83c33f6a904bb723c2bd7dcd91b148c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_738bc585c34418a194e4c6bc710ee6a9 = $(`<div id="html_738bc585c34418a194e4c6bc710ee6a9" style="width: 100.0%; height: 100.0%;">     <b>Gateway ID:</b> ac1f09fffe00ab25<br>     <b>Altitude:</b> 108.13m<br>     <b>Coordinates:</b> (16.11073, 108.12857)     </div>`)[0];
+                popup_c83c33f6a904bb723c2bd7dcd91b148c.setContent(html_738bc585c34418a194e4c6bc710ee6a9);
+            
+        
+
+        circle_marker_44688f806e0b0a57f7504c53f54770b5.bindPopup(popup_c83c33f6a904bb723c2bd7dcd91b148c)
+        ;
+
+        
+    
+    
+            circle_marker_44688f806e0b0a57f7504c53f54770b5.bindTooltip(
+                `<div>
+                     ac1f09fffe00ab25
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_320cc64b538fd9a94a5d0586e21f1ae2 = L.circleMarker(
+                [16.0740984, 108.15253],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28);
+        
+    
+        var popup_762efea3c5eea136c34ccb5c66bfd2d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfa00a7116a754cbb94f05802c2fc907 = $(`<div id="html_cfa00a7116a754cbb94f05802c2fc907" style="width: 100.0%; height: 100.0%;">     <b>Gateway ID:</b> a840411eebb44150<br>     <b>Altitude:</b> N/A<br>     <b>Coordinates:</b> (16.07410, 108.15253)     </div>`)[0];
+                popup_762efea3c5eea136c34ccb5c66bfd2d0.setContent(html_cfa00a7116a754cbb94f05802c2fc907);
+            
+        
+
+        circle_marker_320cc64b538fd9a94a5d0586e21f1ae2.bindPopup(popup_762efea3c5eea136c34ccb5c66bfd2d0)
+        ;
+
+        
+    
+    
+            circle_marker_320cc64b538fd9a94a5d0586e21f1ae2.bindTooltip(
+                `<div>
+                     a840411eebb44150
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f65fce1b5a516039a83f6e9e3dc41d64 = L.circleMarker(
+                [16.0741086, 108.1525171],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28);
+        
+    
+        var popup_f5f696eebce01528086768737170b70c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_264694eea09369bd450ee699afe002ed = $(`<div id="html_264694eea09369bd450ee699afe002ed" style="width: 100.0%; height: 100.0%;">     <b>Gateway ID:</b> a84041ffff1ec39f<br>     <b>Altitude:</b> N/A<br>     <b>Coordinates:</b> (16.07411, 108.15252)     </div>`)[0];
+                popup_f5f696eebce01528086768737170b70c.setContent(html_264694eea09369bd450ee699afe002ed);
+            
+        
+
+        circle_marker_f65fce1b5a516039a83f6e9e3dc41d64.bindPopup(popup_f5f696eebce01528086768737170b70c)
+        ;
+
+        
+    
+    
+            circle_marker_f65fce1b5a516039a83f6e9e3dc41d64.bindTooltip(
+                `<div>
+                     a84041ffff1ec39f
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_f0c0777bc9061f64c5781f3cfc23aa28.addTo(map_48186d3238fd3b0275a80bd4fbaf1e61);
+        
+</script>
+</html>
