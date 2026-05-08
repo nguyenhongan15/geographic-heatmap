@@ -3,7 +3,7 @@ import folium
 from folium.plugins import MarkerCluster
 
 # 1. Đọc file JSON
-with open('../data/gateway_lat_lon.json', 'r', encoding='utf-8') as f:
+with open('../data/fake_node.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 gateways = data['gateways']
